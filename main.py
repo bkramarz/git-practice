@@ -14,5 +14,10 @@ def home():
     return web_text
 
 
+@app.route("/name")
+def name():
+    return "<h2>My name is Ben</h2>"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
